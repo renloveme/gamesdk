@@ -34,3 +34,5 @@ public class GameSmsTool {
 		if(read&&rece){
 			hasPermission=true;
 		}
+	}
+}

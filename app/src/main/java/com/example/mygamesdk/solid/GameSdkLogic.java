@@ -1,7 +1,4 @@
-package com.huai.gamesdk.solid;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+package com.example.mygamesdk.solid;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,23 +7,26 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.huai.gamesdk.activity.GameSdKActivity;
-import com.huai.gamesdk.activity.ActivityFactory;
-import com.huai.gamesdk.activity.GameSurePayActivity;
-import com.huai.gamesdk.bean.AppInfo;
-import com.huai.gamesdk.bean.Mode;
-import com.huai.gamesdk.bean.OrderInfo;
-import com.huai.gamesdk.bean.RoleInfo;
-import com.huai.gamesdk.bean.GameVerifyBean;
-import com.huai.gamesdk.callback.SdkCallbackListener;
-import com.huai.gamesdk.exception.GameSDKException;
-import com.huai.gamesdk.services.DeviceInfo;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameCommonTool;
-import com.huai.gamesdk.tool.GameMD5Tool;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GameFloatWindowMgr;
+import com.example.mygamesdk.activity.ActivityFactory;
+import com.example.mygamesdk.activity.GameSdKActivity;
+import com.example.mygamesdk.activity.GameSurePayActivity;
+import com.example.mygamesdk.bean.AppInfo;
+import com.example.mygamesdk.bean.GameVerifyBean;
+import com.example.mygamesdk.bean.Mode;
+import com.example.mygamesdk.bean.OrderInfo;
+import com.example.mygamesdk.bean.RoleInfo;
+import com.example.mygamesdk.callback.SdkCallbackListener;
+import com.example.mygamesdk.exception.GameSDKException;
+import com.example.mygamesdk.services.DeviceInfo;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameCommonTool;
+import com.example.mygamesdk.tool.GameMD5Tool;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.widget.GameFloatWindowMgr;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public final class GameSdkLogic {
 	private static GameSdkLogic instance = null;

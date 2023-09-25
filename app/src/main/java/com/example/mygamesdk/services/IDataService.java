@@ -1,8 +1,8 @@
-package com.huai.gamesdk.services;
-
-import java.util.List;
+package com.example.mygamesdk.services;
 
 import org.json.JSONObject;
+
+import java.util.List;
 
 /**
  * 客户端保存数据类

@@ -31,16 +31,16 @@ import android.widget.RelativeLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.huai.gamesdk.activity.ActivityFactory;
-import com.huai.gamesdk.activity.GameSdKActivity;
-import com.huai.gamesdk.bean.ComDrawableRect;
-import com.huai.gamesdk.bean.ConfBean;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.solid.GameStatusCode;
-import com.huai.gamesdk.widget.GameLoadingLay;
-import com.huai.gamesdk.widget.GameSdkDialog;
-import com.huai.gamesdk.widget.GameSdkHeadererLayout;
+import com.example.mygamesdk.activity.ActivityFactory;
+import com.example.mygamesdk.activity.GameSdKActivity;
+import com.example.mygamesdk.bean.ComDrawableRect;
+import com.example.mygamesdk.bean.ConfBean;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.solid.GameStatusCode;
+import com.example.mygamesdk.widget.GameLoadingLay;
+import com.example.mygamesdk.widget.GameSdkDialog;
+import com.example.mygamesdk.widget.GameSdkHeadererLayout;
 
 import java.text.DecimalFormat;
 
@@ -1365,4 +1365,3 @@ public final class GameUiTool {
 		return moneyStr;
 	}
 }
-                         

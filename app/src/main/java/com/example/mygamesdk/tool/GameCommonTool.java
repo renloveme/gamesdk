@@ -1,4 +1,14 @@
-package com.huai.gamesdk.tool;
+package com.example.mygamesdk.tool;
+
+import android.content.Context;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
+
+import com.example.mygamesdk.bean.Coupon;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;
@@ -7,16 +17,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Enumeration;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import android.content.Context;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
-
-import com.huai.gamesdk.bean.Coupon;
 
 public class GameCommonTool {
 

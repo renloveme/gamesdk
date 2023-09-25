@@ -1,18 +1,18 @@
-package com.huai.gamesdk.services;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import com.huai.gamesdk.activity.ActivityFactory;
-import com.huai.gamesdk.tool.GameDesTool;
-import com.huai.gamesdk.tool.GameSdkLog;
+package com.example.mygamesdk.services;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
+
+import com.example.mygamesdk.activity.ActivityFactory;
+import com.example.mygamesdk.tool.GameDesTool;
+import com.example.mygamesdk.tool.GameSdkLog;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public final class SharedPrefDataService implements IDataService {
 	private static final String SP_FILE_NAME = "gamesdk_sharepren_info";

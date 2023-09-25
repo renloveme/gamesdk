@@ -1,8 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -21,22 +17,26 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.huai.gamesdk.bean.Coupon;
-import com.huai.gamesdk.callback.SdkRequestCallback;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.solid.GameStatusCode;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameCommonTool;
-import com.huai.gamesdk.tool.GameSdkLogger;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkRes;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GameOkDialog;
-import com.huai.gamesdk.widget.GameSdkDialog;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.bean.Coupon;
+import com.example.mygamesdk.callback.SdkRequestCallback;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.solid.GameStatusCode;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameCommonTool;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameSdkLogger;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameOkDialog;
+import com.example.mygamesdk.widget.GameSdkDialog;
+import com.example.mygamesdk.widget.GameSdkToast;
 import com.tendcloud.appcpa.TalkingDataAppCpa;
 import com.ulopay.android.h5_library.manager.CheckOderManager;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 	private OnClickListener paytypeListener = null;
@@ -77,7 +77,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 		LinearLayout mainLayout = new LinearLayout(activity);
 		mainLayout.setOrientation(LinearLayout.VERTICAL);
 		mainLayout.setBackgroundColor(Color.parseColor("#ffffff"));
-		LinearLayout.LayoutParams mainLp = new LinearLayout.LayoutParams(
+		LayoutParams mainLp = new LayoutParams(
 				LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		mainLp.gravity=Gravity.CENTER;
 		mainLayout.setLayoutParams(mainLp);
@@ -85,7 +85,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 		View tiltebar = uitool.createPayTitleBar(activity);
 		// 标题的线
 		View lineIv = new View(activity);
-		lineIv.setLayoutParams(new LinearLayout.LayoutParams(
+		lineIv.setLayoutParams(new LayoutParams(
 				LayoutParams.MATCH_PARENT, uitool.dp2px(activity, 2)));
 		lineIv.setBackgroundDrawable(asset.decodeDensityDpiDrawable(activity,
 				"gamesdk_pay_line.png"));
@@ -120,7 +120,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 		}else{
 			payLayout.setOrientation(LinearLayout.HORIZONTAL);
 		}
-		LinearLayout.LayoutParams paramParent = new LinearLayout.LayoutParams(
+		LayoutParams paramParent = new LayoutParams(
 				LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		payLayout.setBackgroundResource(GameSdkRes.getRes().getDrawableId(
 				activity, "gamesdk_payitem_bg"));
@@ -133,7 +133,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 				activity, "gamesdk_payitem_bg"));
 		// 支付方式的文字
 		TextView paytype = new TextView(activity);
-		LinearLayout.LayoutParams paytypeLayoutParams = new LinearLayout.LayoutParams(
+		LayoutParams paytypeLayoutParams = new LayoutParams(
 				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 		
 		if(GameSdkConstants.isPORTRAIT){
@@ -167,7 +167,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 //			支付方式  :竖屏
 			LinearLayout layout = new LinearLayout(activity);
 			layout.setOrientation(LinearLayout.HORIZONTAL);
-			LinearLayout.LayoutParams payParams = new LinearLayout.LayoutParams(-1,-1);	
+			LayoutParams payParams = new LayoutParams(-1,-1);
 			payParams.setMargins(GameUiTool.dp2px(activity, 26),0, 0, 0);
 			layout.setLayoutParams(payParams);
 			layout.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -187,7 +187,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 		weixinunionBtn.setOnClickListener(paytypeListener);
 
 		
-		LinearLayout.LayoutParams lpWarpLayoutParams = new LinearLayout.LayoutParams(
+		LayoutParams lpWarpLayoutParams = new LayoutParams(
 				LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 		lpWarpLayoutParams.setMargins(0, GameUiTool.dp2px(activity, 5), 0,
 				GameUiTool.dp2px(activity, 0));
@@ -214,7 +214,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 		mainLayout.addView(payBtn);
 
 		ScrollView mainScroll = new ScrollView(activity);
-		LinearLayout.LayoutParams mainSLp = new LinearLayout.LayoutParams(
+		LayoutParams mainSLp = new LayoutParams(
 				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 		mainSLp.gravity=Gravity.CENTER_VERTICAL;
 		mainScroll.setLayoutParams(mainSLp);
@@ -224,7 +224,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 		LinearLayout mainsLayout = new LinearLayout(activity);
 		mainsLayout.setOrientation(LinearLayout.HORIZONTAL);
 		mainsLayout.setBackgroundColor(Color.parseColor("#00ffffff"));
-		LinearLayout.LayoutParams mainssLp = new LinearLayout.LayoutParams(
+		LayoutParams mainssLp = new LayoutParams(
 				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 		mainsLayout.setLayoutParams(mainssLp);
 		mainsLayout.setGravity(Gravity.CENTER);
@@ -597,7 +597,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
 					couponLay.findViewWithTag("money").setVisibility(
 							View.VISIBLE);
 					TextView tip = (TextView) couponLay.findViewWithTag("tip");
-					LinearLayout.LayoutParams lpTiParams = new LinearLayout.LayoutParams(
+					LayoutParams lpTiParams = new LayoutParams(
 							0, LayoutParams.WRAP_CONTENT, 1f);
 					lpTiParams.setMargins(GameUiTool.dp2px(activity, 10), 0, 0, 0);
 					tip.setText("可抵用");//
@@ -635,7 +635,7 @@ final class GamePayActivity extends ActivityUI implements SdkRequestCallback {
     	chooseCoupon=null;
 		couponLay.findViewWithTag("money").setVisibility(View.GONE);
 		TextView tip = (TextView) couponLay.findViewWithTag("tip");
-		LinearLayout.LayoutParams lpTiParams = new LinearLayout.LayoutParams(
+		LayoutParams lpTiParams = new LayoutParams(
 				0, LayoutParams.WRAP_CONTENT, 1f);
 		lpTiParams.setMargins(0, 0, 0, 0);
 		tip.setLayoutParams(lpTiParams);

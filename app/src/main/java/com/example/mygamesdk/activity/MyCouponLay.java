@@ -1,12 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-
-import com.huai.gamesdk.bean.Coupon;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkRes;
+package com.example.mygamesdk.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,6 +11,14 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.mygamesdk.bean.Coupon;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameUiTool;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
 
 
 public class MyCouponLay extends LinearLayout {
@@ -45,7 +45,7 @@ public class MyCouponLay extends LinearLayout {
 		// "sdk/images/gamesdk_dialog_coupon_left.png", 1.5f));代金券
 		setBackgroundColor(Color.parseColor("#00000000"));
 		tiltle = new TextView(getContext());
-		LinearLayout.LayoutParams lpTitle = new LinearLayout.LayoutParams(
+		LayoutParams lpTitle = new LayoutParams(
 				LayoutParams.WRAP_CONTENT, GameUiTool.dp2px(getContext(), 200));
 		tiltle.setGravity(Gravity.CENTER);
 		tiltle.setText("代\n\n金\n\n劵");
@@ -55,7 +55,7 @@ public class MyCouponLay extends LinearLayout {
 		tiltle.setBackgroundDrawable(GameAssetTool.getInstance()
 				.decodeDrawableFromAsset(getContext(),
 						"gamesdk/images/gamesdk_dialog_coupon_left.png", 2.0f));
-		LinearLayout.LayoutParams lpList = new LinearLayout.LayoutParams(
+		LayoutParams lpList = new LayoutParams(
 				LayoutParams.MATCH_PARENT, GameUiTool.dp2px(getContext(), 200));
 		lpList.setMargins(GameUiTool.dp2px(getContext(), 4), 0,
 				GameUiTool.dp2px(getContext(), 4), 0);
@@ -68,7 +68,7 @@ public class MyCouponLay extends LinearLayout {
 		listWrapLayout.setBackgroundDrawable(GameAssetTool.getInstance()
 				.decodeDrawableFromAsset(getContext(),
 						"gamesdk/images/gamesdk_dialog_coupon_right.png", 2.0f));
-		listWrapLayout.setLayoutParams(new LinearLayout.LayoutParams(
+		listWrapLayout.setLayoutParams(new LayoutParams(
 				LayoutParams.MATCH_PARENT, GameUiTool.dp2px(getContext(), 200)));
 		couponList.setDivider(null);
 		couponList.setSelector(GameSdkRes.getRes().getDrawableId(getContext(),
@@ -87,7 +87,7 @@ public class MyCouponLay extends LinearLayout {
 		addView(listWrapLayout);
 		
 		setListCostumeScrollBar();
-		LinearLayout.LayoutParams lParams = new LinearLayout.LayoutParams(
+		LayoutParams lParams = new LayoutParams(
 				LayoutParams.WRAP_CONTENT, GameUiTool.dp2px(getContext(), 200));
 		setLayoutParams(lParams);
 	}

@@ -1,9 +1,9 @@
-package com.huai.gamesdk.bean;
+package com.example.mygamesdk.bean;
+
+import com.example.mygamesdk.tool.GameMD5Tool;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import com.huai.gamesdk.tool.GameMD5Tool;
 
 
 public class GameVerifyBean {

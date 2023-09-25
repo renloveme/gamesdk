@@ -1,4 +1,4 @@
-package com.huai.gamesdk.mvpbase;
+package com.example.mygamesdk.mvpbase;
 
 
 /**

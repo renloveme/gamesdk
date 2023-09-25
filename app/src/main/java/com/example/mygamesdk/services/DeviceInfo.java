@@ -1,14 +1,4 @@
-package com.huai.gamesdk.services;
-
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+package com.example.mygamesdk.services;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -21,9 +11,20 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameChannelUtil;
-import com.huai.gamesdk.tool.GameSdkLog;
+
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameChannelUtil;
+import com.example.mygamesdk.tool.GameSdkLog;
+
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 
 public class DeviceInfo {

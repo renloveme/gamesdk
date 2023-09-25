@@ -64,4 +64,6 @@ public final class GameStringTool {
 			return false;
 		}
 		return str.trim().length()>=minLength&&str.trim().length()<=maxLength;
-	
+	}
+
+}

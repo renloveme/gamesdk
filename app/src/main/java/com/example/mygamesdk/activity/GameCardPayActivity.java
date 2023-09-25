@@ -1,7 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.util.HashMap;
-import java.util.Map;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,23 +12,26 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
-import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkRes;
-import com.huai.gamesdk.widget.GameSdkButton;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameSdkButton;
+import com.example.mygamesdk.widget.GameSdkToast;
+
+import java.util.HashMap;
+import java.util.Map;
 
 final class GameCardPayActivity extends ActivityUI {
 
@@ -53,7 +53,7 @@ final class GameCardPayActivity extends ActivityUI {
 
 		// 主layout
 		LinearLayout cardPayLayout = new LinearLayout(activity);
-		LinearLayout.LayoutParams payParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+		LayoutParams payParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		cardPayLayout.setLayoutParams(payParams);
 		cardPayLayout.setPadding(2 * tenWidthPx, 2 * tenHeightPx, 2 * tenWidthPx, tenHeightPx);
 		cardPayLayout.setOrientation(LinearLayout.VERTICAL);
@@ -104,12 +104,12 @@ final class GameCardPayActivity extends ActivityUI {
 
 		// 支付信息
 		LinearLayout infoLayout = new LinearLayout(activity);
-		LinearLayout.LayoutParams infoParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+		LayoutParams infoParams = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
 		infoParams.setMargins(0, (int)(GameSdkConstants.DEVICE_INFO.windowHeightPx * 0.05), 0, (int)(GameSdkConstants.DEVICE_INFO.windowHeightPx * 0.05));
 		infoLayout.setOrientation(LinearLayout.HORIZONTAL);
 		infoLayout.setGravity(Gravity.CENTER_HORIZONTAL);
 
-		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(-2, -2);
+		LayoutParams params = new LayoutParams(-2, -2);
 		TextView priceLabelTV = new TextView(activity);
 		priceLabelTV.setLayoutParams(params);
 		priceLabelTV.setText(asset.getLangProperty(activity, "pay_card_price_label"));
@@ -125,7 +125,7 @@ final class GameCardPayActivity extends ActivityUI {
 		infoLayout.addView(priceTV, params);
 
 		LinearLayout body = new LinearLayout(activity);
-		LinearLayout.LayoutParams bodyParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+		LayoutParams bodyParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		bodyParams.setMargins(25 * tenWidthPx, 0, 25 * tenWidthPx, 0);
 		body.setLayoutParams(bodyParams);
 		body.setOrientation(LinearLayout.VERTICAL);
@@ -225,7 +225,7 @@ final class GameCardPayActivity extends ActivityUI {
 		LinearLayout accountLayout = GameUiTool.getInstance().edtxLinearLayout(activity, true, accountEdtx);
 		LinearLayout passwdLayout = GameUiTool.getInstance().edtxLinearLayout(activity, true, passwdEdtxT);
 
-		LinearLayout.LayoutParams edtxParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+		LayoutParams edtxParams = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
 		edtxParams.setMargins(0, tenHeightPx, 0, 0);
 		accountLayout.setLayoutParams(edtxParams);
 		passwdLayout.setLayoutParams(edtxParams);

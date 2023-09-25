@@ -1,4 +1,4 @@
-package com.huai.gamesdk.widget;
+package com.example.mygamesdk.widget;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,11 +11,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.huai.gamesdk.bean.ConfBean;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.bean.ConfBean;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameUiTool;
 
 public class GameSdkFooterLayout extends LinearLayout {
 
@@ -47,7 +47,7 @@ public class GameSdkFooterLayout extends LinearLayout {
 
 		public GameSdkFooterLayout build() {
 			GameSdkFooterLayout mainlayout = new GameSdkFooterLayout(context);
-			LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,-2,1);
+			LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT,-2,1);
 			int hmargin = (int)(GameSdkConstants.DEVICE_INFO.windowWidthPx * 0.02);
 			int vmargin = (int)(GameSdkConstants.DEVICE_INFO.windowHeightPx * 0.04);
 			params.setMargins(hmargin,0, hmargin, 0);
@@ -56,12 +56,12 @@ public class GameSdkFooterLayout extends LinearLayout {
 			mainlayout.setGravity(Gravity.CENTER);
 			//横线
 			View v= new ImageView(context);
-			v.setLayoutParams(new LinearLayout.LayoutParams(-1,1));
+			v.setLayoutParams(new LayoutParams(-1,1));
 			v.setBackgroundColor(Color.rgb(179, 179, 179));
 			mainlayout.addView(v);
 			//footer
 			GameSdkFooterLayout layout = new GameSdkFooterLayout(context);
-			LinearLayout.LayoutParams linearParams = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT,1);
+			LayoutParams linearParams = new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT,1);
 			linearParams.setMargins(0, vmargin, 0, vmargin);
 			layout.setLayoutParams(linearParams);
 			//设置上边距
@@ -71,10 +71,10 @@ public class GameSdkFooterLayout extends LinearLayout {
 
 			if (left != null) {
 				LinearLayout	mainleftLayout=new LinearLayout(context);
-				mainleftLayout.setLayoutParams(new LinearLayout.LayoutParams(0,LayoutParams.MATCH_PARENT,1));
+				mainleftLayout.setLayoutParams(new LayoutParams(0,LayoutParams.MATCH_PARENT,1));
 				mainleftLayout.setGravity(Gravity.CENTER);
 				LinearLayout leftLayout = new LinearLayout(context);
-				LinearLayout.LayoutParams leftParams = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, -1);
+				LayoutParams leftParams = new LayoutParams(LayoutParams.WRAP_CONTENT, -1);
 				leftParams.setMargins(0, 0, 0, 0);
 				leftLayout.setLayoutParams(leftParams);
 				leftLayout.setGravity(Gravity.LEFT);
@@ -82,7 +82,7 @@ public class GameSdkFooterLayout extends LinearLayout {
 				
 
 				Button leftBtn = new Button(context);
-				leftBtn.setLayoutParams(new LinearLayout.LayoutParams(-2, -1));
+				leftBtn.setLayoutParams(new LayoutParams(-2, -1));
 				leftBtn.setPadding(vmargin*2, 0, 0, 0);
 				leftBtn.setText(left.text);
 				leftBtn.setTextColor(left.textColor);
@@ -121,14 +121,14 @@ public class GameSdkFooterLayout extends LinearLayout {
 			}
 			if (right != null) {
 				LinearLayout rightLayout = new LinearLayout(context);
-				LinearLayout.LayoutParams rightParams = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.FILL_PARENT, 1);
+				LayoutParams rightParams = new LayoutParams(0, LayoutParams.FILL_PARENT, 1);
 				rightLayout.setOrientation(LinearLayout.HORIZONTAL);
 				rightParams.setMargins(0, 0, 0, 0);
 				rightLayout.setLayoutParams(rightParams);
 				rightLayout.setGravity(Gravity.CENTER);
 
 				Button rightBtn = new Button(context);
-				rightBtn.setLayoutParams(new LinearLayout.LayoutParams(-2,-1));
+				rightBtn.setLayoutParams(new LayoutParams(-2,-1));
 				rightBtn.setPadding(0, 0, 0, 0);
 				rightBtn.setText(right.text);
 				rightBtn.setTextColor(right.textColor);

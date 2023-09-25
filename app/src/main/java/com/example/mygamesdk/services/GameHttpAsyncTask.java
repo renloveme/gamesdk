@@ -1,7 +1,4 @@
-package com.huai.gamesdk.services;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+package com.example.mygamesdk.services;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -9,12 +6,15 @@ import android.os.AsyncTask;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameHttpTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.tool.GameHttpTool.HttpResult;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameHttpTool;
+import com.example.mygamesdk.tool.GameHttpTool.HttpResult;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameSdkToast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 

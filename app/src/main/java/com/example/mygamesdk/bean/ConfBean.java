@@ -1,6 +1,6 @@
-package com.huai.gamesdk.bean;
+package com.example.mygamesdk.bean;
 
-import com.huai.gamesdk.activity.ActivityFactory;
+import com.example.mygamesdk.activity.ActivityFactory;
 
 public class ConfBean {
 	/** 显示信息 */

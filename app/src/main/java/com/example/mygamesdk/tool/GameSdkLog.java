@@ -1,9 +1,9 @@
-package com.huai.gamesdk.tool;
-
-import com.huai.gamesdk.bean.Mode;
-import com.huai.gamesdk.solid.GameSdkConstants;
+package com.example.mygamesdk.tool;
 
 import android.util.Log;
+
+import com.example.mygamesdk.bean.Mode;
+import com.example.mygamesdk.solid.GameSdkConstants;
 
 public final class GameSdkLog {
 	private static GameSdkLog log = null;

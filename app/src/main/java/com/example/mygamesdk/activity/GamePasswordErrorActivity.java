@@ -1,12 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import com.huai.gamesdk.services.Code;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GameSdkButton;
-import com.huai.gamesdk.widget.GameSdkToast;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -22,6 +14,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.mygamesdk.services.Code;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameSdkButton;
+import com.example.mygamesdk.widget.GameSdkToast;
 
 final class GamePasswordErrorActivity extends ActivityUI {
 

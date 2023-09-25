@@ -8,7 +8,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.util.Log;
 
-import com.huai.gamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.solid.GameSdkConstants;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -186,3 +186,5 @@ public class GameAssetTool {
 			tool = new GameAssetTool();
 		}
 		return tool;
+	}
+}

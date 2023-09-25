@@ -1,13 +1,13 @@
-package com.huai.gamesdk.widget;
+package com.example.mygamesdk.widget;
 
-
-import com.huai.gamesdk.tool.GameCommonTool;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.example.mygamesdk.tool.GameCommonTool;
 
 
 public class GameFloatWindowHideView extends LinearLayout {

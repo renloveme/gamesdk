@@ -1,12 +1,12 @@
- package com.huai.gamesdk.solid;
+ package com.example.mygamesdk.solid;
 
 
 
-import com.huai.gamesdk.bean.AppInfo;
-import com.huai.gamesdk.bean.Mode;
-import com.huai.gamesdk.bean.OrderInfo;
-import com.huai.gamesdk.bean.RoleInfo;
-import com.huai.gamesdk.services.DeviceInfo;
+import com.example.mygamesdk.bean.AppInfo;
+import com.example.mygamesdk.bean.Mode;
+import com.example.mygamesdk.bean.OrderInfo;
+import com.example.mygamesdk.bean.RoleInfo;
+import com.example.mygamesdk.services.DeviceInfo;
 
 
 public final class GameSdkConstants {

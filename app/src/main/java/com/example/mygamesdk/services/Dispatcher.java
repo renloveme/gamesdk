@@ -1,16 +1,4 @@
-package com.huai.gamesdk.services;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import okhttp3.MediaType;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+package com.example.mygamesdk.services;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -21,24 +9,36 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.mygamesdk.activity.ActivityFactory;
+import com.example.mygamesdk.activity.GameSdKActivity;
+import com.example.mygamesdk.bean.GameVerifyBean;
+import com.example.mygamesdk.bean.RoleInfo;
+import com.example.mygamesdk.callback.SdkCallbackListener;
+import com.example.mygamesdk.callback.SdkRequestCallback;
+import com.example.mygamesdk.services.IDataService.UidType;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.solid.GameStatusCode;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameCommonTool;
+import com.example.mygamesdk.tool.GameDesTool;
+import com.example.mygamesdk.tool.GameMD5Tool;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameSdkLogger;
+
+import com.example.mygamesdk.widget.GameSdkToast;
 import com.tendcloud.appcpa.TalkingDataAppCpa;
-import com.huai.gamesdk.activity.GameSdKActivity;
-import com.huai.gamesdk.activity.ActivityFactory;
-import com.huai.gamesdk.bean.RoleInfo;
-import com.huai.gamesdk.bean.GameVerifyBean;
-import com.huai.gamesdk.callback.SdkRequestCallback;
-import com.huai.gamesdk.callback.SdkCallbackListener;
-import com.huai.gamesdk.services.IDataService.UidType;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.solid.GameStatusCode;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameCommonTool;
-import com.huai.gamesdk.tool.GameDesTool;
-import com.huai.gamesdk.tool.GameSdkLogger;
-import com.huai.gamesdk.tool.GameMD5Tool;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GameBrowserNotification;
-import com.huai.gamesdk.widget.GameSdkToast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import okhttp3.MediaType;
 
 /**
  * !!!注意!!!
@@ -180,7 +180,7 @@ public final class Dispatcher {
 		String param = new JsonParameters() {
 			@Override
 			public List<Entry> other() {
-				List<Dispatcher.Entry> list = new ArrayList<Dispatcher.Entry>();
+				List<Entry> list = new ArrayList<Entry>();
 				list.add(new Entry("account", username));
 				list.add(new Entry("password", password));
 				return list;
@@ -204,7 +204,7 @@ public final class Dispatcher {
 		String param = new JsonParameters() {
 			@Override
 			public List<Entry> other() {
-				List<Dispatcher.Entry> list = new ArrayList<Dispatcher.Entry>();
+				List<Entry> list = new ArrayList<Entry>();
 				list.add(new Entry("请输入您想创建的账号", account));
 				return list;
 			}
@@ -221,7 +221,7 @@ public final class Dispatcher {
 		String param = new JsonParameters() {
 			@Override
 			public List<Entry> other() {
-				List<Dispatcher.Entry> list = new ArrayList<Dispatcher.Entry>();
+				List<Entry> list = new ArrayList<Entry>();
 				return list;
 			}
 		}.create();
@@ -242,7 +242,7 @@ public final class Dispatcher {
 		String param = new JsonParameters() {
 			@Override
 			public List<Entry> other() {
-				List<Dispatcher.Entry> list = new ArrayList<Dispatcher.Entry>();
+				List<Entry> list = new ArrayList<Entry>();
 				list.add(new Entry("uid", uid.toString()));
 				list.add(new Entry("password", password.toString()));
 				list.add(new Entry("newAccount", account.toString()));
@@ -271,7 +271,7 @@ public final class Dispatcher {
 		String param = new JsonParameters() {
 			@Override
 			public List<Entry> other() {
-				List<Dispatcher.Entry> list = new ArrayList<Dispatcher.Entry>();
+				List<Entry> list = new ArrayList<Entry>();
 				list.add(new Entry("mobile", mobile));
 				return list;
 			}
@@ -292,7 +292,7 @@ public final class Dispatcher {
 		String param = new JsonParameters() {
 			@Override
 			public List<Entry> other() {
-				List<Dispatcher.Entry> list = new ArrayList<Dispatcher.Entry>();
+				List<Entry> list = new ArrayList<Entry>();
 				list.add(new Entry("mobile", mobile));
 				list.add(new Entry("vcode", vcode));
 				list.add(new Entry("password", password));
@@ -328,7 +328,7 @@ public final class Dispatcher {
 		String param = new JsonParameters() {
 			@Override
 			public List<Entry> other() {
-				List<Dispatcher.Entry> list = new ArrayList<Dispatcher.Entry>();
+				List<Entry> list = new ArrayList<Entry>();
 				list.add(new Entry("mobile", mobile.toString()));
 				return list;
 			}
@@ -600,11 +600,11 @@ public final class Dispatcher {
 
 		intent.putExtra("layoutId", layoutId.toString());
 		if (param != null) {
-			Set<java.util.Map.Entry<String, String>> keySet = param.entrySet();
-			Iterator<java.util.Map.Entry<String, String>> iterator = keySet
+			Set<Map.Entry<String, String>> keySet = param.entrySet();
+			Iterator<Map.Entry<String, String>> iterator = keySet
 					.iterator();
 			while (iterator.hasNext()) {
-				java.util.Map.Entry<String, String> entry = iterator.next();
+				Map.Entry<String, String> entry = iterator.next();
 				intent.putExtra(entry.getKey(), entry.getValue());
 			}
 		}
@@ -630,7 +630,7 @@ public final class Dispatcher {
 				"register_finish_notifi_content"), account);
 		String url = GameSdkConstants.getUsercenterUrl() + "?from=yhsdk&username="
 				+ account;
-		GameBrowserNotification notification = new GameBrowserNotification(activity);
+		com.huai.gamesdk.widget.GameBrowserNotification notification = new com.huai.gamesdk.widget.GameBrowserNotification(activity);
 		notification.showNotification(title, content, url);
 	}
 

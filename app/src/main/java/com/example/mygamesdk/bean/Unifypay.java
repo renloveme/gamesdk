@@ -1,4 +1,4 @@
-package com.huai.gamesdk.bean;
+package com.example.mygamesdk.bean;
 
 import java.io.Serializable;
 public class Unifypay implements Serializable {

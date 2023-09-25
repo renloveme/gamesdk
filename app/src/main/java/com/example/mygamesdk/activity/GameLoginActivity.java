@@ -1,8 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.util.List;
-
-import org.json.JSONObject;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,20 +19,24 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.huai.gamesdk.bean.ComDrawableRect;
-import com.huai.gamesdk.bean.ConfBean;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.services.IDataService;
-import com.huai.gamesdk.services.IDataService.UidType;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameStringTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GamePopupDropdown;
-import com.huai.gamesdk.widget.GameSdkButton;
-import com.huai.gamesdk.widget.GameSdkFooterLayout;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.bean.ComDrawableRect;
+import com.example.mygamesdk.bean.ConfBean;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.services.IDataService;
+import com.example.mygamesdk.services.IDataService.UidType;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameStringTool;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GamePopupDropdown;
+import com.example.mygamesdk.widget.GameSdkButton;
+import com.example.mygamesdk.widget.GameSdkFooterLayout;
+import com.example.mygamesdk.widget.GameSdkToast;
+
+import org.json.JSONObject;
+
+import java.util.List;
 
 /***
  * 

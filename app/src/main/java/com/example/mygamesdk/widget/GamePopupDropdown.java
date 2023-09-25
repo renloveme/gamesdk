@@ -1,8 +1,4 @@
-package com.huai.gamesdk.widget;
-
-import java.util.List;
-
-import org.json.JSONObject;
+package com.example.mygamesdk.widget;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -22,12 +18,16 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.services.IDataService;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.services.IDataService;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameUiTool;
+
+import org.json.JSONObject;
+
+import java.util.List;
 
 /**
  * 下拉列表

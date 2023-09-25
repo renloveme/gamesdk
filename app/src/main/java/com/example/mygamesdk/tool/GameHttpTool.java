@@ -1,4 +1,6 @@
-package com.huai.gamesdk.tool;
+package com.example.mygamesdk.tool;
+
+import com.example.mygamesdk.exception.GameSDKException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,8 +16,6 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.X509TrustManager;
-
-import com.huai.gamesdk.exception.GameSDKException;
 
 public final class GameHttpTool {
 

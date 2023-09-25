@@ -1,9 +1,10 @@
-package com.huai.gamesdk.tool;
-import java.io.IOException;
-import java.io.InputStream;
+package com.example.mygamesdk.tool;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+
+import java.io.IOException;
+import java.io.InputStream;
 public class GameLoginPictureTools {
 	public static Drawable loadImageFromAsserts(final Context ctx, String fileName) {
         try {

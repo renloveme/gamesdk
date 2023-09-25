@@ -1,4 +1,4 @@
-package com.huai.gamesdk.callback;
+package com.example.mygamesdk.callback;
 
 
 public interface SdkCallbackListener<T> {

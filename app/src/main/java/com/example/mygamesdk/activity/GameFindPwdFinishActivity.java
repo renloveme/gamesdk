@@ -1,4 +1,4 @@
-package com.huai.gamesdk.activity;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,9 +9,9 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.widget.GameSdkHeadererLayout;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameSdkHeadererLayout;
 
 final class GameFindPwdFinishActivity extends ActivityUI {
 

@@ -1,4 +1,4 @@
-package com.huai.gamesdk.solid;
+package com.example.mygamesdk.solid;
 import android.app.Application;
 
 public class GameSdkApplication extends Application{

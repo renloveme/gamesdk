@@ -1,4 +1,4 @@
-package com.huai.gamesdk.bean;
+package com.example.mygamesdk.bean;
 
 public class AppInfo {
 	public String appId;

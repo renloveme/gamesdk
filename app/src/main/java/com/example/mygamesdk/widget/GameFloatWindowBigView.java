@@ -13,14 +13,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.huai.gamesdk.activity.GameFloatWindowActivity;
-import com.huai.gamesdk.bean.FloatSendBean;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.services.IDataService;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameCommonTool;
-import com.huai.gamesdk.tool.GameMD5Tool;
-import com.huai.gamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.activity.GameFloatWindowActivity;
+import com.example.mygamesdk.bean.FloatSendBean;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.services.IDataService;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameCommonTool;
+import com.example.mygamesdk.tool.GameMD5Tool;
+import com.example.mygamesdk.tool.GameSdkLog;
 
 import org.json.JSONObject;
 
@@ -350,4 +350,5 @@ public class GameFloatWindowBigView extends LinearLayout {
      */
     protected void showToast(String str) {
         Toast.makeText(context, str, Toast.LENGTH_LONG).show();
-   
+    }
+}

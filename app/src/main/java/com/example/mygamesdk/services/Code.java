@@ -8,7 +8,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.text.TextUtils;
 
-import com.huai.gamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.solid.GameSdkConstants;
 
 import java.util.Random;
 
@@ -94,7 +94,7 @@ public class Code {
 		for (int i = 0; i < lineNumber; i++) {
 			drawLine(c, paint);
 		}
-		c.save(Canvas.ALL_SAVE_FLAG);
+		c.save();
 		// 保存
 		c.restore();
 		return bp;
@@ -150,3 +150,5 @@ public class Code {
 		if (bpUtil == null)
 			bpUtil = new Code();
 		return bpUtil;
+	}
+}

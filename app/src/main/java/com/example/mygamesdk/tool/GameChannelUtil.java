@@ -117,3 +117,5 @@ public class GameChannelUtil {
 			e.printStackTrace();
 		}
 		return -1;
+	}
+}

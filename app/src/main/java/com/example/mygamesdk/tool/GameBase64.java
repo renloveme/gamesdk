@@ -285,3 +285,5 @@ public final class GameBase64 {
 			}
 		}
 		return newSize;
+	}
+}

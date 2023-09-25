@@ -1,29 +1,29 @@
-package com.huai.gamesdk.mvp.presenterImp;
-
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-
-import org.json.JSONObject;
-
-import okhttp3.MediaType;
-import okhttp3.RequestBody;
+package com.example.mygamesdk.mvp.presenterImp;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
-import com.huai.gamesdk.activity.GameSdKActivity;
-import com.huai.gamesdk.activity.ActivityFactory;
-import com.huai.gamesdk.callback.SdkCallbackListener;
-import com.huai.gamesdk.mvp.model.MVPLogingBean;
-import com.huai.gamesdk.mvp.presenter.LogingPresenter;
-import com.huai.gamesdk.mvp.view.LoginView;
-import com.huai.gamesdk.mvpbase.BasePresenterImpl;
-import com.huai.gamesdk.services.IDataService;
-import com.huai.gamesdk.services.SharedPrefDataService;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameMD5Tool;
+import com.example.mygamesdk.activity.ActivityFactory;
+import com.example.mygamesdk.activity.GameSdKActivity;
+import com.example.mygamesdk.callback.SdkCallbackListener;
+import com.example.mygamesdk.mvp.model.MVPLogingBean;
+import com.example.mygamesdk.mvp.presenter.LogingPresenter;
+import com.example.mygamesdk.mvp.view.LoginView;
+import com.example.mygamesdk.mvpbase.BasePresenterImpl;
+import com.example.mygamesdk.services.IDataService;
+import com.example.mygamesdk.services.SharedPrefDataService;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameMD5Tool;
+
+import org.json.JSONObject;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
 
 public class LogingPresenterImp extends BasePresenterImpl<LoginView> implements
 		LogingPresenter {
@@ -96,7 +96,7 @@ public class LogingPresenterImp extends BasePresenterImpl<LoginView> implements
 			Set<Map.Entry<String, String>> keySet = param.entrySet();
 			Iterator<Map.Entry<String, String>> iterator = keySet.iterator();
 			while (iterator.hasNext()) {
-				java.util.Map.Entry<String, String> entry = iterator.next();
+				Map.Entry<String, String> entry = iterator.next();
 				intent.putExtra(entry.getKey(), entry.getValue());
 			}
 		}

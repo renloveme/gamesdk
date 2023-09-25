@@ -1,4 +1,11 @@
-package com.example.mygamesdk.widget;
+package com.huai.gamesdk.widget;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameSdkLog;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -16,13 +23,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.tool.GameSdkRes;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
 
 public class GameBrowserNotification extends Notification {
 	private Context context;
@@ -48,7 +48,7 @@ public class GameBrowserNotification extends Notification {
 		this.ledOnMS = 1000;
 		this.flags |= FLAG_SHOW_LIGHTS;
 		this.flags |= FLAG_AUTO_CANCEL;
-		this.setLatestEventInfo(context, title, content, pendingIntent);
+		//this.setLatestEventInfo(context, title, content, pendingIntent);
 
 		ViewGroup group = (ViewGroup) contentView.apply(context, null);
 		findView(group, new ViewVisitor() {
@@ -134,7 +134,7 @@ public class GameBrowserNotification extends Notification {
 
 	/**
 	 * 查找视图里面的所有子视图
-	 * 
+	 *
 	 * @param group
 	 * @param visitor
 	 */
@@ -150,4 +150,6 @@ public class GameBrowserNotification extends Notification {
 			}
 		}
 
-	
+	}
+
+}

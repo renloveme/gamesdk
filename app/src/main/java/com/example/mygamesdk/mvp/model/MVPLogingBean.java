@@ -1,4 +1,4 @@
-package com.huai.gamesdk.mvp.model;
+package com.example.mygamesdk.mvp.model;
 
 public class MVPLogingBean {
 	

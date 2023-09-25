@@ -1,4 +1,4 @@
-package com.huai.gamesdk.activity;
+package com.example.mygamesdk.activity;
 
 public enum ActivityFactory {
 	PHONE_REGISTER_ACTIVITY,

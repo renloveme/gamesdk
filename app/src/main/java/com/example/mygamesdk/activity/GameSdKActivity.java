@@ -1,6 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.util.Locale;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,10 +10,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import com.huai.gamesdk.activity.ActivityFactory;
-import com.huai.gamesdk.activity.ActivityUI;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameSdkLogger;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameSdkLogger;
+
+import java.util.Locale;
 
 public final class GameSdKActivity extends Activity {
 	private ActivityUI specificActivity = null;

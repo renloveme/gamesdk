@@ -1,10 +1,10 @@
-package com.huai.gamesdk.mvp.presenter;
+package com.example.mygamesdk.mvp.presenter;
 
 import android.content.Context;
 
-import com.huai.gamesdk.mvp.model.MVPLogingBean;
-import com.huai.gamesdk.mvp.view.LoginView;
-import com.huai.gamesdk.mvpbase.BasePresenter;
+import com.example.mygamesdk.mvp.model.MVPLogingBean;
+import com.example.mygamesdk.mvp.view.LoginView;
+import com.example.mygamesdk.mvpbase.BasePresenter;
 
 public interface LogingPresenter extends BasePresenter<LoginView>{
 	 void login(MVPLogingBean user ,Context context) ;

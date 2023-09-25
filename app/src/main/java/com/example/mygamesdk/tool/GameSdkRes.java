@@ -33,3 +33,5 @@ public class GameSdkRes {
 			resource = new GameSdkRes();
 		}
 		return resource;
+	}
+}

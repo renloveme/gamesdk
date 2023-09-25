@@ -1,4 +1,4 @@
-package com.huai.gamesdk.activity;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -16,13 +16,13 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.huai.gamesdk.callback.SdkRequestCallback;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameSdkRes;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.callback.SdkRequestCallback;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.widget.GameSdkToast;
 import com.ulopay.android.h5_library.manager.CheckOderManager;
 
 
@@ -199,7 +199,7 @@ final class GameOtherPayActivity extends ActivityUI implements SdkRequestCallbac
 			}
 		});
 
-		View.OnClickListener clickListener = new View.OnClickListener() {
+		OnClickListener clickListener = new OnClickListener() {
 
 			@Override
 			public void onClick(View view) {

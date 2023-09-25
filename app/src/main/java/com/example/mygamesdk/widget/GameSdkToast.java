@@ -1,4 +1,4 @@
-package com.huai.gamesdk.widget;
+package com.example.mygamesdk.widget;
 
 import android.content.Context;
 import android.os.Handler;

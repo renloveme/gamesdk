@@ -1,9 +1,5 @@
-package com.huai.gamesdk.widget;
+package com.example.mygamesdk.widget;
 
-
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkRes;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,6 +13,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameUiTool;
 
 
 public class GameLoadingLay extends LinearLayout {
@@ -44,7 +44,7 @@ public class GameLoadingLay extends LinearLayout {
 		setBackgroundResource(GameSdkRes.getRes().getDrawableId(getContext(),
 				"gamesdk_loading_windows"));
 		RelativeLayout wrapLayout=new RelativeLayout(getContext());
-		LinearLayout.LayoutParams lpwrap=  new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+		LayoutParams lpwrap=  new LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
 		lpwrap.gravity=Gravity.CENTER_VERTICAL;
 		wrapLayout.setLayoutParams(lpwrap);
 		bar.setImageDrawable(GameAssetTool.getInstance().decodeDrawableFromAsset(getContext(), "gamesdk/images/gamesdk_loading.png", 1.8f));

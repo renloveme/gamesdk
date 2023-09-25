@@ -1,4 +1,4 @@
-package com.huai.gamesdk.solid;
+package com.example.mygamesdk.solid;
 
 public final class GameStatusCode {
 	private GameStatusCode(){}

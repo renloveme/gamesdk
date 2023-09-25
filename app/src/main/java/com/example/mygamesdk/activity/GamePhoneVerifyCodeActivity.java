@@ -1,6 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.util.regex.Pattern;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -25,16 +23,18 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameSmsContent;
-import com.huai.gamesdk.tool.GameStringTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkRes;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GameSdkButton;
-import com.huai.gamesdk.widget.GameSdkHeadererLayout;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameSmsContent;
+import com.example.mygamesdk.tool.GameStringTool;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameSdkButton;
+import com.example.mygamesdk.widget.GameSdkHeadererLayout;
+import com.example.mygamesdk.widget.GameSdkToast;
+
+import java.util.regex.Pattern;
 
 final class GamePhoneVerifyCodeActivity extends ActivityUI {
 	private TextView reGetVcodeTxvw = null;

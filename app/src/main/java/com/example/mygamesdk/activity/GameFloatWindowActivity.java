@@ -1,6 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.net.URLDecoder;
+package com.example.mygamesdk.activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -17,10 +15,12 @@ import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.huai.gamesdk.bean.FloatSendBean;
-import com.huai.gamesdk.services.JavaScriptService;
-import com.huai.gamesdk.tool.GameCommonTool;
-import com.huai.gamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.bean.FloatSendBean;
+import com.example.mygamesdk.services.JavaScriptService;
+import com.example.mygamesdk.tool.GameCommonTool;
+import com.example.mygamesdk.tool.GameSdkRes;
+
+import java.net.URLDecoder;
 
 
 public class GameFloatWindowActivity extends Activity {

@@ -1,14 +1,13 @@
-package com.huai.gamesdk.services;
+package com.example.mygamesdk.services;
 
 import android.content.Context;
-import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.widget.Toast;
 
-import com.huai.gamesdk.activity.GameFloatWindowActivity;
-import com.huai.gamesdk.bean.FloatSendBean;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameMD5Tool;
+import com.example.mygamesdk.activity.GameFloatWindowActivity;
+import com.example.mygamesdk.bean.FloatSendBean;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameMD5Tool;
 
 import org.json.JSONObject;
 

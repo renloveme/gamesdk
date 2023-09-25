@@ -1,17 +1,9 @@
-package com.huai.gamesdk.activity;
-
-import com.huai.gamesdk.callback.SdkRequestCallback;
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameCommonTool;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.text.Html;
-
-
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -20,6 +12,12 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.mygamesdk.callback.SdkRequestCallback;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameCommonTool;
 
 
 public class GameGuildPayActivity extends ActivityUI implements SdkRequestCallback {

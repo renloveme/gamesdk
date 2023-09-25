@@ -1,4 +1,4 @@
-package com.huai.gamesdk.activity;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,8 +9,8 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.huai.gamesdk.tool.GameCommonTool;
-import com.huai.gamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameCommonTool;
+import com.example.mygamesdk.tool.GameSdkRes;
 
 
 public class GameFloatMineActivity extends Activity {

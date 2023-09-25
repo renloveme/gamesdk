@@ -1,4 +1,4 @@
-package com.huai.gamesdk.activity;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,13 +16,13 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameSmsTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.widget.GameSdkHeadererLayout;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameSmsTool;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameSdkHeadererLayout;
+import com.example.mygamesdk.widget.GameSdkToast;
 
 final class GameFindPwdTypeActivity extends GameFindPwdActivity {
 	private String prefix  = "gamesdk/images/";

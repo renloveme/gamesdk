@@ -1,10 +1,4 @@
-package com.huai.gamesdk.activity;
-
-import java.text.SimpleDateFormat;
-
-import com.huai.gamesdk.bean.Coupon;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameUiTool;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,8 +9,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.LinearLayout.LayoutParams;
+import android.widget.TextView;
+
+import com.example.mygamesdk.bean.Coupon;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameUiTool;
+
+import java.text.SimpleDateFormat;
 
 
 public class CouponAdapter extends ArrayAdapter<Coupon>{
@@ -37,16 +37,16 @@ public class CouponAdapter extends ArrayAdapter<Coupon>{
 			 contentLayout.setOrientation(LinearLayout.HORIZONTAL);
 			 
 			 ImageView checkTv=new ImageView(context);
-			 LinearLayout.LayoutParams lpmoney=new  LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+			 LayoutParams lpmoney=new  LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
 			 lpmoney.setMargins(0, 0, GameUiTool.dp2px(context, 8), 0);
 			 checkTv.setLayoutParams(lpmoney);
 			 
 			 TextView moneyTv=new TextView(context);
 			 TextView state=new TextView(context);
-			 LinearLayout.LayoutParams lpMoney=new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT,1);
+			 LayoutParams lpMoney=new LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT,1);
 			 moneyTv.setLayoutParams(lpMoney); 
 			 View lineView = GameUiTool.getInstance().createDividerLine((Activity)context, 1);
-			 LinearLayout.LayoutParams linearParams = new LinearLayout.LayoutParams(
+			 LayoutParams linearParams = new LayoutParams(
 						LayoutParams.MATCH_PARENT, 1);
 			 linearParams.setMargins(GameUiTool.dp2px(context, 15), 0, GameUiTool.dp2px(context, 15), 0);
 			 lineView.setLayoutParams(linearParams);	
@@ -66,7 +66,7 @@ public class CouponAdapter extends ArrayAdapter<Coupon>{
 			 state.setText("有效期至:yyyy-MM-DD");
 			 state.setTextSize(9);
 			 state.setTextColor(Color.parseColor("#C8C8C8"));
-			 LinearLayout.LayoutParams lpstate=new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
+			 LayoutParams lpstate=new LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
 			 lpstate.setMargins(0, 0, GameUiTool.dp2px(getContext(), 5), 0);
 			 state.setLayoutParams(lpstate);
 			 
@@ -78,7 +78,7 @@ public class CouponAdapter extends ArrayAdapter<Coupon>{
 			 contentLayout.addView(moneyTv);
 			 contentLayout.addView(state);
 			 contentLayout.setGravity(Gravity.CENTER_VERTICAL);
-			 LinearLayout.LayoutParams lpCon=new  LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT);
+			 LayoutParams lpCon=new  LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT);
 			 lpCon.setMargins(GameUiTool.dp2px(context,15), GameUiTool.dp2px(context, 6), GameUiTool.dp2px(context, 15), GameUiTool.dp2px(context, 4));
 			 contentLayout.setLayoutParams(lpCon);
 			 mainLayout.addView(contentLayout);

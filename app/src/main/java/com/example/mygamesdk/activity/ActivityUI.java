@@ -1,13 +1,13 @@
-package com.huai.gamesdk.activity;
-
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameAssetTool;
-import com.huai.gamesdk.tool.GameUiTool;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameAssetTool;
+import com.example.mygamesdk.tool.GameUiTool;
 
 public abstract class ActivityUI {
 	public static final String INPUT_TYPE_CONTENT = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

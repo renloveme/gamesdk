@@ -1,4 +1,4 @@
-package com.huai.gamesdk.activity;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,15 +13,15 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import com.huai.gamesdk.services.Dispatcher;
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameStringTool;
-import com.huai.gamesdk.tool.GameUiTool;
-import com.huai.gamesdk.tool.GameSdkLog;
-import com.huai.gamesdk.widget.GameSdkButton;
-import com.huai.gamesdk.widget.GameSdkCheckBox;
-import com.huai.gamesdk.widget.GameSdkHeadererLayout;
-import com.huai.gamesdk.widget.GameSdkToast;
+import com.example.mygamesdk.services.Dispatcher;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameStringTool;
+import com.example.mygamesdk.tool.GameUiTool;
+import com.example.mygamesdk.widget.GameSdkButton;
+import com.example.mygamesdk.widget.GameSdkCheckBox;
+import com.example.mygamesdk.widget.GameSdkHeadererLayout;
+import com.example.mygamesdk.widget.GameSdkToast;
 
 final class GameAccountRegisterActivity extends ActivityUI {
 	private static final int INPUT_TYPE = InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS;

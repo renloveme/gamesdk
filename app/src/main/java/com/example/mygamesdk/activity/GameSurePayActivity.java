@@ -1,4 +1,4 @@
-package com.huai.gamesdk.activity;
+package com.example.mygamesdk.activity;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.huai.gamesdk.R;
+import com.example.mygamesdk.R;
 
 /**
  * Created by Administrator on 2018/1/2.

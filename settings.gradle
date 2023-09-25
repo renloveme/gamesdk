@@ -13,5 +13,5 @@
 //        mavenCentral()
 //    }
 //}
-rootProject.name = "Mygamesdk"
+
 include ':app'

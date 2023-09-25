@@ -1,4 +1,4 @@
-package com.huai.gamesdk.tool;
+package com.example.mygamesdk.tool;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

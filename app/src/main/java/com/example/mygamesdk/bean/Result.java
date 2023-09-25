@@ -1,4 +1,4 @@
-package com.huai.gamesdk.bean;
+package com.example.mygamesdk.bean;
 
 public class Result {
 	public String resultStatus;

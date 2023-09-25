@@ -1,4 +1,4 @@
-package com.huai.gamesdk.tool;
+package com.example.mygamesdk.tool;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

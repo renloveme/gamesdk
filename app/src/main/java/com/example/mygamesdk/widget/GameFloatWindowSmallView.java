@@ -14,8 +14,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.huai.gamesdk.tool.GameCommonTool;
-import com.huai.gamesdk.tool.GameSdkLog;
+import com.example.mygamesdk.tool.GameCommonTool;
+import com.example.mygamesdk.tool.GameSdkLog;
 
 public class GameFloatWindowSmallView extends LinearLayout {
 
@@ -271,3 +271,5 @@ public class GameFloatWindowSmallView extends LinearLayout {
 		if(timeListener != null){
 			timeListener.removeCallbacks(noTouchRunnable);
 		}
+	}
+}

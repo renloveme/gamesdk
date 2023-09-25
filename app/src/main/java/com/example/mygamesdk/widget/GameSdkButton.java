@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.huai.gamesdk.solid.GameSdkConstants;
-import com.huai.gamesdk.tool.GameSdkRes;
-import com.huai.gamesdk.tool.GameUiTool;
+import com.example.mygamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.tool.GameSdkRes;
+import com.example.mygamesdk.tool.GameUiTool;
 
 /**
  * 自定义按钮控件
@@ -65,3 +65,5 @@ public abstract class GameSdkButton extends Button implements View.OnClickListen
 	
 	public void setMargins(int left, int top, int right, int bottom) {
 		params.setMargins(left, top, right, bottom);
+	}
+}

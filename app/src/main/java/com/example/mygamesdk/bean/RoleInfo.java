@@ -1,10 +1,10 @@
-package com.huai.gamesdk.bean;
-
-import java.util.HashMap;
-import java.util.Map;
+package com.example.mygamesdk.bean;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RoleInfo {
 

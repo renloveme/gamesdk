@@ -1,8 +1,8 @@
-package com.huai.gamesdk.tool;
+package com.example.mygamesdk.tool;
 
 import android.util.Log;
 
-import com.huai.gamesdk.solid.GameSdkConstants;
+import com.example.mygamesdk.solid.GameSdkConstants;
 
 /**
  * 

@@ -70,3 +70,5 @@ public class GameSmsObserver extends ContentObserver{
 			e.printStackTrace();
 		}
 	}
+	
+}
